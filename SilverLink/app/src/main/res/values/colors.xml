@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="sl_primary">#146B5D</color>
+    <color name="sl_deep">#124D44</color>
+    <color name="sl_ink">#203B37</color>
+    <color name="sl_muted">#647570</color>
+    <color name="sl_background">#F7F6F2</color>
+    <color name="sl_surface">#FFFFFF</color>
+    <color name="sl_border">#DCE3DC</color>
+    <color name="sl_tint">#E4F0E9</color>
+    <color name="sl_soft">#F0F5EF</color>
+    <color name="sl_gold">#91602A</color>
+    <color name="sl_sand">#F8EEDC</color>
+</resources>

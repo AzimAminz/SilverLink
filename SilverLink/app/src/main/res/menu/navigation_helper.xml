@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_nearby" android:title="@string/nearby" android:icon="@drawable/nearby_map_pinned" />
+    <item android:id="@+id/nav_tasks" android:title="@string/my_tasks" android:icon="@drawable/request_clipboard_list" />
+    <item android:id="@+id/nav_rewards" android:title="@string/rewards" android:icon="@drawable/rewards_award1" />
+    <item android:id="@+id/nav_profile" android:title="@string/profile" android:icon="@drawable/home_user_round" />
+</menu>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+    <TextView android:text="@string/explore_silverlink" style="@style/SL.Text.CardTitle" />
+    <TextView android:text="@string/choose_a_role_to_try_this_local_preview_secure_login_and_google_" style="@style/SL.Text.BodyMuted" android:layout_marginTop="8dp" />
+    <RadioGroup android:id="@+id/login_role" android:layout_width="match_parent" android:layout_height="wrap_content" android:checkedButton="@id/login_requester" android:layout_marginTop="20dp">
+        <RadioButton android:id="@+id/login_requester" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/requester_priya" />
+        <RadioButton android:id="@+id/login_helper" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/helper_daniel" />
+    </RadioGroup>
+</LinearLayout>

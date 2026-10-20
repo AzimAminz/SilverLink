@@ -1,0 +1,7 @@
+<resources>
+    <string name="request_help">Request help</string>
+    <string name="your_request">Your request</string>
+    <string name="your_task">Your task</string>
+    <string name="completion_review">Completion review</string>
+    <string name="community_rewards">Community rewards</string>
+</resources>

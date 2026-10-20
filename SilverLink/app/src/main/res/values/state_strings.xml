@@ -1,0 +1,12 @@
+<resources>
+    <string name="tracking_status_open">Broadcast to township</string>
+    <string name="tracking_points_format">%1$d Community Points stay pending until you verify that the agreed help was received.</string>
+    <string name="self_help_complete">Your help is complete</string>
+    <string name="self_help_review">Your help is ready to review</string>
+    <string name="self_help_verified_description">You confirmed that you received the agreed help. Thanks for closing the loop.</string>
+    <string name="self_help_received">I received the agreed help</string>
+    <string name="self_completion_confirmation">I completed the agreed task and the requester received the help.</string>
+    <string name="review_verified_description">You verified that Asha received her groceries. Thanks for closing the loop.</string>
+    <string name="latest_award_format">%1$d just added · %2$s\nVerified by Priya</string>
+    <string name="reward_pending_description">Complete a request and receive verification to earn your next Community Points.</string>
+</resources>

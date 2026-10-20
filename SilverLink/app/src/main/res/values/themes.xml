@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.SilverLink" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/sl_primary</item>
+        <item name="colorOnPrimary">@color/sl_surface</item>
+        <item name="colorSurface">@color/sl_surface</item>
+        <item name="colorOnSurface">@color/sl_ink</item>
+        <item name="colorSecondaryContainer">@color/sl_tint</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">@color/sl_background</item>
+        <item name="android:colorAccent">@color/sl_primary</item>
+    </style>
+    <style name="Theme.SilverLink" parent="Base.Theme.SilverLink" />
+    <style name="SL.Text" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/sl_ink</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="SL.Text.Body" parent="SL.Text" />
+    <style name="SL.Text.BodyMuted" parent="SL.Text">
+        <item name="android:textColor">@color/sl_muted</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="SL.Text.Caption" parent="SL.Text.BodyMuted">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="SL.Text.Label" parent="SL.Text">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="SL.Text.Pill" parent="SL.Text.Label">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/sl_primary</item>
+    </style>
+    <style name="SL.Text.Points" parent="SL.Text.Label">
+        <item name="android:textColor">@color/sl_primary</item>
+    </style>
+    <style name="SL.Text.Section" parent="SL.Text">
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+    <style name="SL.Text.CardTitle" parent="SL.Text.Section">
+        <item name="android:textSize">22sp</item>
+    </style>
+    <style name="SL.Text.Title" parent="SL.Text.Section">
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="SL.Button" parent="Widget.Material3.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">54dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="cornerRadius">100dp</item>
+        <item name="backgroundTint">@color/sl_primary</item>
+        <item name="android:textColor">@color/sl_surface</item>
+        <item name="iconTint">@null</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconPadding">10dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="iconSize">20dp</item>
+    </style>
+    <style name="SL.Button.Secondary" parent="SL.Button">
+        <item name="backgroundTint">@color/sl_surface</item>
+        <item name="android:textColor">@color/sl_ink</item>
+        <item name="strokeColor">@color/sl_border</item>
+        <item name="strokeWidth">1dp</item>
+    </style>
+    <style name="SL.Button.Link" parent="Widget.Material3.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/sl_primary</item>
+        <item name="iconTint">@null</item>
+        <item name="iconGravity">textStart</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="iconSize">20dp</item>
+    </style>
+</resources>

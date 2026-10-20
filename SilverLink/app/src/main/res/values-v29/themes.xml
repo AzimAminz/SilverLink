@@ -1,0 +1,5 @@
+<resources>
+    <style name="Theme.SilverLink" parent="Base.Theme.SilverLink">
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+</resources>

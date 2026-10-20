@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="12dp" android:paddingBottom="24dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="20dp" android:paddingBottom="10dp">
+            <FrameLayout android:layout_width="64dp" android:layout_height="64dp" android:layout_gravity="center_horizontal" android:background="@drawable/bg_avatar">
+                <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/review_check_check" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_gravity="center" />
+            </FrameLayout>
+            <TextView android:text="@string/mum_s_help_is_complete" android:gravity="center" android:textSize="28sp" android:id="@+id/review_title" style="@style/SL.Text.Title" android:layout_marginTop="16dp" />
+            <TextView android:text="@string/you_verified_that_asha_received_her_groceries_thanks_for_closing" android:gravity="center" android:id="@+id/review_description" style="@style/SL.Text.BodyMuted" android:layout_marginTop="10dp" />
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="20dp" app:cardElevation="0dp" app:strokeWidth="1dp" app:strokeColor="@color/sl_border" app:cardBackgroundColor="@color/sl_surface" android:layout_marginTop="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:background="@drawable/bg_pill" android:id="@+id/verified_pill" android:baselineAligned="false">
+                    <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/review_circle_check" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="5dp" />
+                    <TextView android:text="@string/completion_verified" android:layout_width="wrap_content" style="@style/SL.Text.Pill" />
+                </LinearLayout>
+                <TextView android:text="@string/collect_prepaid_groceries" android:id="@+id/summary_title" style="@style/SL.Text.CardTitle" android:layout_marginTop="12dp" />
+                <TextView android:text="@string/for_asha_menon_72_request_sl_1048" style="@style/SL.Text.BodyMuted" android:id="@+id/summary_recipient" android:layout_marginTop="8dp" />
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/sl_border" android:layout_marginTop="14dp" android:layout_marginBottom="14dp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+                    <TextView android:text="@string/dt" android:layout_width="40dp" android:layout_height="40dp" android:gravity="center" android:background="@drawable/bg_avatar" style="@style/SL.Text.Label" />
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginStart="12dp" android:layout_weight="1">
+                        <TextView android:text="@string/daniel_tan" style="@style/SL.Text.Label" />
+                        <TextView android:text="@string/submitted_today_4_38_pm" style="@style/SL.Text.Caption" android:layout_marginTop="4dp" />
+                    </LinearLayout>
+                    <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/review_badge_check" android:contentDescription="@null" android:importantForAccessibility="no" />
+                </LinearLayout>
+                <TextView android:text="@string/collected_order_df218_and_put_the_bags_on_asha_s_kitchen_counter_92a70a" android:id="@+id/review_notes" style="@style/SL.Text.BodyMuted" android:layout_marginTop="14dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/delivery_photo_button" android:text="@string/view_delivery_photo_4_35_pm" style="@style/SL.Button.Link" app:icon="@drawable/review_image" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:id="@+id/verification_record" android:padding="16dp" android:background="@drawable/bg_soft" android:layout_marginTop="20dp" android:baselineAligned="false">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/review_circle_check1" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="12dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                <TextView android:text="@string/i_confirmed_with_mum" android:id="@+id/verification_record_title" style="@style/SL.Text.Label" />
+                <TextView android:text="@string/the_agreed_help_was_received_verified_by_priya_today_4_45_pm" android:id="@+id/verification_record_description" style="@style/SL.Text.BodyMuted" android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" android:background="@drawable/bg_deep" android:layout_marginTop="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+                <FrameLayout android:layout_width="52dp" android:layout_height="52dp" android:background="@drawable/bg_award_symbol" android:layout_marginEnd="14dp">
+                    <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/review_award" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_gravity="center" />
+                </FrameLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                    <TextView android:text="@string/label_40_points_4bde1b" android:textColor="@color/sl_surface" android:id="@+id/award_title" style="@style/SL.Text.Title" />
+                    <TextView android:text="@string/awarded_to_daniel_tan" android:textColor="#D8EAE1" android:id="@+id/award_description" style="@style/SL.Text.BodyMuted" android:layout_marginTop="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="14dp" android:baselineAligned="false">
+                <TextView android:text="@string/errands_standard" android:textColor="#D8EAE1" android:id="@+id/review_category" style="@style/SL.Text.Caption" android:layout_width="0dp" android:layout_weight="1" />
+                <TextView android:text="@string/fixed_award_40" android:layout_width="wrap_content" android:textColor="@color/sl_surface" android:id="@+id/fixed_award" style="@style/SL.Text.Label" />
+            </LinearLayout>
+            <TextView android:text="@string/released_only_after_your_verification_using_the_predefined_categ" android:textColor="#D8EAE1" style="@style/SL.Text.Caption" android:layout_marginTop="14dp" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/review_action_button" android:text="@string/back_to_my_requests" style="@style/SL.Button" android:layout_marginTop="20dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="top" android:layout_marginTop="20dp" android:baselineAligned="false">
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/review_message_circle" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="10dp" />
+            <TextView android:text="@string/something_not_right_you_can_report_an_issue_from_this_request_s_" style="@style/SL.Text.Caption" android:layout_width="0dp" android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:id="@+id/main" android:background="@color/sl_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="72dp" android:orientation="horizontal" android:gravity="center_vertical" android:id="@+id/app_bar" android:paddingStart="20dp" android:paddingEnd="20dp" android:baselineAligned="false">
+        <FrameLayout android:id="@+id/brand_mark" android:layout_width="36dp" android:layout_height="36dp" android:background="@drawable/bg_mark" android:layout_marginEnd="12dp">
+            <ImageView android:layout_width="23dp" android:layout_height="23dp" android:src="@drawable/home_hand_heart" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_gravity="center" />
+        </FrameLayout>
+        <ImageButton android:id="@+id/back_button" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/request_arrow_left" android:padding="12dp" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="@string/go_back" android:visibility="gone" />
+        <TextView android:text="@string/silverlink" android:id="@+id/toolbar_title" android:maxLines="2" style="@style/SL.Text.CardTitle" android:layout_width="0dp" android:layout_weight="1" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/role_button" android:text="@string/requester" android:layout_width="wrap_content" app:backgroundTint="@color/sl_tint" app:cornerRadius="100dp" android:insetTop="11dp" android:insetBottom="11dp" style="@style/SL.Button.Link" />
+    </LinearLayout>
+    <androidx.fragment.app.FragmentContainerView android:id="@+id/screen_container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottom_navigation" android:layout_width="match_parent" android:layout_height="80dp" android:background="@color/sl_surface" app:backgroundTint="@color/sl_surface" app:elevation="0dp" app:itemPaddingTop="10dp" app:itemPaddingBottom="8dp" app:itemIconSize="23dp" app:itemIconTint="@color/navigation_tint" app:itemTextColor="@color/navigation_tint" app:itemTextAppearanceActive="@style/SL.NavigationLabel" app:itemTextAppearanceInactive="@style/SL.NavigationLabel" app:itemActiveIndicatorStyle="@style/Widget.Material3.BottomNavigationView.ActiveIndicator" app:labelVisibilityMode="labeled" app:menu="@menu/navigation_requester" />
+</LinearLayout>

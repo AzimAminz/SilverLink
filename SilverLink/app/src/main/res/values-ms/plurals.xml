@@ -1,0 +1,5 @@
+<resources>
+    <plurals name="open_requests_count">
+        <item quantity="other">%1$d permintaan terbuka</item>
+    </plurals>
+</resources>

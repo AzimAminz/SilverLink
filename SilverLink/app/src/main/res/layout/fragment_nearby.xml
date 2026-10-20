@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingEnd="20dp" android:paddingTop="12dp" android:paddingBottom="24dp">
+        <TextView android:text="@string/damai_township_67378e" style="@style/SL.Text.Pill" />
+        <TextView android:text="@string/hello_daniel" style="@style/SL.Text.Title" android:layout_marginTop="10dp" />
+        <TextView android:text="@string/find_a_neighbour_you_can_lend_a_hand_to" android:textSize="16sp" style="@style/SL.Text.BodyMuted" android:layout_marginTop="7dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:padding="20dp" android:background="@drawable/bg_verified" android:layout_marginTop="20dp" android:baselineAligned="false">
+            <ImageView android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/nearby_shield_check" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="14dp" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                <TextView android:text="@string/you_re_a_verified_damai_resident" style="@style/SL.Text.Label" />
+                <TextView android:text="@string/only_requests_you_re_eligible_for_in_your_township_appear_here" style="@style/SL.Text.Caption" android:layout_marginTop="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.chip.ChipGroup android:id="@+id/task_filters" android:layout_width="match_parent" android:layout_height="wrap_content" app:singleSelection="true" app:selectionRequired="true" app:checkedChip="@id/filter_all" app:chipSpacingHorizontal="8dp" android:layout_marginTop="12dp">
+            <com.google.android.material.chip.Chip android:id="@+id/filter_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/all_tasks" android:checkable="true" app:checkedIconVisible="false" app:shapeAppearanceOverlay="@style/SL.Shape.Pill" app:chipBackgroundColor="@color/chip_background" app:chipStrokeColor="@color/sl_border" app:chipStrokeWidth="1dp" android:textColor="@color/segmented_text" />
+            <com.google.android.material.chip.Chip android:id="@+id/filter_errands" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/errands" android:checkable="true" app:checkedIconVisible="false" app:shapeAppearanceOverlay="@style/SL.Shape.Pill" app:chipBackgroundColor="@color/chip_background" app:chipStrokeColor="@color/sl_border" app:chipStrokeWidth="1dp" android:textColor="@color/segmented_text" />
+            <com.google.android.material.chip.Chip android:id="@+id/filter_companionship" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/companionship" android:checkable="true" app:checkedIconVisible="false" app:shapeAppearanceOverlay="@style/SL.Shape.Pill" app:chipBackgroundColor="@color/chip_background" app:chipStrokeColor="@color/sl_border" app:chipStrokeWidth="1dp" android:textColor="@color/segmented_text" />
+        </com.google.android.material.chip.ChipGroup>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="12dp" android:baselineAligned="false">
+            <TextView android:text="@string/label_3_open_requests" android:id="@+id/open_request_count" style="@style/SL.Text.Section" android:layout_width="0dp" android:layout_weight="1" />
+            <TextView android:text="@string/nearest_first" android:layout_width="wrap_content" style="@style/SL.Text.Caption" />
+        </LinearLayout>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="20dp" app:cardElevation="0dp" app:strokeWidth="1dp" app:strokeColor="@color/sl_border" app:cardBackgroundColor="@color/sl_surface" android:id="@+id/errands_card" android:layout_marginTop="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:background="@drawable/bg_pill" android:id="@+id/summary_category" android:baselineAligned="false">
+                        <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/nearby_shopping_bag" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="5dp" />
+                        <TextView android:text="@string/errands_standard" android:layout_width="wrap_content" style="@style/SL.Text.Pill" />
+                    </LinearLayout>
+                    <TextView android:text="@string/label_40_points" android:gravity="end" android:id="@+id/summary_points" style="@style/SL.Text.Points" android:layout_width="0dp" android:layout_weight="1" />
+                </LinearLayout>
+                <TextView android:text="@string/collect_prepaid_groceries" android:id="@+id/summary_title" style="@style/SL.Text.CardTitle" android:layout_marginTop="12dp" />
+                <TextView android:text="@string/for_asha_menon_72_request_sl_1048" android:id="@+id/summary_recipient" style="@style/SL.Text.BodyMuted" android:layout_marginTop="8dp" />
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="top" android:layout_marginTop="16dp" android:baselineAligned="false">
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/nearby_map_pin" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="10dp" />
+                    <TextView android:text="@string/cedar_lane_0_4_km_away" style="@style/SL.Text.Caption" android:layout_width="0dp" android:layout_weight="1" android:id="@+id/nearby_location" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="top" android:layout_marginTop="12dp" android:baselineAligned="false">
+                    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/nearby_clock3" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="10dp" />
+                    <TextView android:text="@string/today_4_00_5_00_pm_about_30_min" style="@style/SL.Text.Caption" android:layout_width="0dp" android:layout_weight="1" android:id="@+id/nearby_when" />
+                </LinearLayout>
+                <TextView android:text="@string/requested_by_priya_asha_s_daughter_2_min_ago" style="@style/SL.Text.Caption" android:layout_marginTop="14dp" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/accept_request_button" android:text="@string/view_accept_request" style="@style/SL.Button" app:icon="@drawable/nearby_arrow_right" android:layout_marginTop="16dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="20dp" app:cardElevation="0dp" app:strokeWidth="1dp" app:strokeColor="@color/sl_border" app:cardBackgroundColor="@color/sl_surface" android:id="@+id/tea_card" android:layout_marginTop="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:background="@drawable/bg_pill" android:baselineAligned="false">
+                        <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/nearby_coffee" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="5dp" />
+                        <TextView android:text="@string/companionship" android:layout_width="wrap_content" style="@style/SL.Text.Pill" />
+                    </LinearLayout>
+                    <TextView android:text="@string/label_30_points" android:gravity="end" style="@style/SL.Text.Points" android:layout_width="0dp" android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="12dp" android:baselineAligned="false">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                        <TextView android:text="@string/company_over_a_cup_of_tea" style="@style/SL.Text.Section" />
+                        <TextView android:text="@string/mr_lim_76_0_7_km_away" style="@style/SL.Text.BodyMuted" android:layout_marginTop="8dp" />
+                        <TextView android:text="@string/today_5_00_pm_about_30_min" style="@style/SL.Text.Caption" android:layout_marginTop="6dp" />
+                    </LinearLayout>
+                    <ImageButton android:id="@+id/tea_details_button" android:layout_width="48dp" android:layout_height="48dp" android:padding="15dp" android:src="@drawable/nearby_chevron_right" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="@string/view_company_over_a_cup_of_tea" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" app:cardCornerRadius="20dp" app:cardElevation="0dp" app:strokeWidth="1dp" app:strokeColor="@color/sl_border" app:cardBackgroundColor="@color/sl_surface" android:id="@+id/video_card" android:layout_marginTop="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="18dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:baselineAligned="false">
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:paddingStart="10dp" android:paddingEnd="10dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:background="@drawable/bg_pill" android:baselineAligned="false">
+                        <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/nearby_smartphone" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="5dp" />
+                        <TextView android:text="@string/digital_help" android:layout_width="wrap_content" style="@style/SL.Text.Pill" />
+                    </LinearLayout>
+                    <TextView android:text="@string/label_30_points" android:gravity="end" style="@style/SL.Text.Points" android:layout_width="0dp" android:layout_weight="1" />
+                </LinearLayout>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical" android:layout_marginTop="12dp" android:baselineAligned="false">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1">
+                        <TextView android:text="@string/set_up_video_calling" style="@style/SL.Text.Section" />
+                        <TextView android:text="@string/grace_wong_69_0_9_km_away" style="@style/SL.Text.BodyMuted" android:layout_marginTop="8dp" />
+                        <TextView android:text="@string/tomorrow_11_00_am_about_20_min" style="@style/SL.Text.Caption" android:layout_marginTop="6dp" />
+                    </LinearLayout>
+                    <ImageButton android:id="@+id/video_details_button" android:layout_width="48dp" android:layout_height="48dp" android:padding="15dp" android:src="@drawable/nearby_chevron_right" android:background="?attr/selectableItemBackgroundBorderless" android:contentDescription="@string/view_set_up_video_calling" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <TextView android:text="@string/no_requests_in_this_category_right_now" android:id="@+id/empty_requests" android:visibility="gone" style="@style/SL.Text.BodyMuted" android:layout_marginTop="20dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="top" android:baselineAligned="false">
+            <ImageView android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/home_heart_handshake" android:contentDescription="@null" android:importantForAccessibility="no" android:layout_marginEnd="10dp" />
+            <TextView android:text="@string/accept_only_what_you_can_comfortably_do_these_are_everyday_non_m" style="@style/SL.Text.Caption" android:layout_width="0dp" android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
